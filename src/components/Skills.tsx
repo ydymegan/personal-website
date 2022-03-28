@@ -18,8 +18,7 @@ const Skills = () => {
   return (
     <div className="my-4">
       <p className="title">Skills</p>
-      <p className="subheading">Professional Skills</p>
-      <p className="my-4">Wire-framing, Prototyping, User Research</p>
+      <p className="my-4">Software Engineering, Enterprise Systems Architecture {'&'} Design, User Research, Business Requirement Gathering, Wire-framing, Prototyping, Digital Marketing</p>
       <p className="subheading">Tools and Technologies</p>
       <div className="flex flex-row gap-2 my-4">
         <img src={typescript} alt="logo" className="logo" />

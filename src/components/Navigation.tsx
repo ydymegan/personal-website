@@ -1,16 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import myResume from "../assets/resume.pdf";
 
 const Navigation = () => {
   return (
     <div className="navbar">
-      <Link to="/">
         <p className="name">Megan Yee</p>
-      </Link>
       <div className="sub-navbar">
         <p>
-          <a href="/about">about</a>
+          <a href="/">about</a>
         </p>
         <p>
           <a href={myResume} target="_blank" rel="noreferrer">

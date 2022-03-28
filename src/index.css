@@ -3,13 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
+ /* medium slate blue: 7371FC */
+
 html {
-  /* background-color: #fff; */
-  /* background-color: #F7FFF7; */
-  /* background-color: #EEF5DB; */
-  /* background-color: #DEE8D5; */
-  /* background-color: #fffdd0; */
-  /* background-color: #E9FAE3; */
   background-color: #EAF6FF;
   z-index: -2;
   padding: 50px 100px 50px 100px;
@@ -20,6 +16,30 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #292F36;
+}
+
+.btn{
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #292F36;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 2px;
+  border-color: #FFA69E; 
+  background-color: #FFA69E;
+}
+
+.btn:hover{
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFA69E;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 2px;
+  background-color: #EAF6FF;
+  border-color: #FFA69E; 
 }
 
 .card {
@@ -67,6 +87,13 @@ body {
   width: 50px;
 }
 
+.small-logo {
+  height: 70px;
+  width: 70px;
+  align-items: center;
+  display:inline-block;
+}
+
 .name {
   color: #FFA69E;
   font-weight: 600;
@@ -81,6 +108,7 @@ body {
 
 .position {
   color: #4f5358;
+  font-weight: 600;
 }
 
 .sub-navbar {
@@ -100,7 +128,7 @@ a {
   color: #18272F;
   font-weight: 600;
   position: relative;
-  /* font-size: 18px; */
+  white-space: nowrap;
 }
 
 a::before {
@@ -113,6 +141,7 @@ a::before {
   height: 30%;
   z-index: -1;
   transition: all .3s ease-in-out;
+  white-space: nowrap;
 }
 
 a:hover::before {
