@@ -5,7 +5,6 @@ import profile from "../assets/profile-pic.jpg";
 import friends from "../assets/friends.jpg";
 
 import Playlist from "./Playlist";
-import Interest from "./Interest";
 
 const About = () => {
   return (
@@ -27,16 +26,10 @@ const About = () => {
   
         </Grid>
         <Grid item xs={6} className="relative">
-          {/* <div className=""> */}
             <img className="image1" src={profile} alt="profile" />
             <img className="image2" src={friends} alt="friends" />
-          {/* </div> */}
         </Grid>
       </Grid>
-
-      {/* 
-      
-      <Interest /> */}
     </div>
   );
 };

@@ -1,15 +1,10 @@
 import React from "react";
-import RiShareBoxFill from "react-icons/ri";
 
 import Navigation from "../components/Navigation";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Button from "../components/Button";
-
-import { Card } from "@material-ui/core";
 
 import profile from "../assets/smiley.png";
-import fistbump from "../assets/fistbump.png";
 import fun from "../assets/fun.png";
 
 const Home = () => {
