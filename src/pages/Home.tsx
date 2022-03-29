@@ -1,14 +1,16 @@
 import React from "react";
+import RiShareBoxFill from "react-icons/ri";
 
 import Navigation from "../components/Navigation";
-import Playlist from "../components/Playlist";
-import Interest from "../components/Interest";
+import About from "../components/About";
 import Skills from "../components/Skills";
 import Button from "../components/Button";
 
-import profile from "../assets/fun.png";
-import fistbump from "../assets/fistbump.png"
-import smiley from "../assets/smiley.png";
+import { Card } from "@material-ui/core";
+
+import profile from "../assets/smiley.png";
+import fistbump from "../assets/fistbump.png";
+import fun from "../assets/fun.png";
 
 const Home = () => {
   return (
@@ -29,10 +31,10 @@ const Home = () => {
             </p>
           </div>
           <div className="my-4">
-            <p>I'm interested to synthesize my technical skills and passion for design to build products for good! </p>
-          </div>
-          <div className="my-4">
-              <p>In my free time, I explore new food places, discover new musicals, dramas or films, watch sunsets and work out (so that I can eat more). </p>
+            <p>
+              I'm interested to synthesize my technical skills and passion for
+              design to build products for good!{" "}
+            </p>
           </div>
           <div className="my-4">
             <p className="position">
@@ -58,23 +60,56 @@ const Home = () => {
         </div>
         <img src={profile} alt="profile" />
       </div>
-      <div>
-        <p className="title">What I've been up to</p>
-        <li>Software Engineer at try{'{'}catch{'}'}, a women in tech organization that builds software projects for social good in Singapore. We're currently working on a </li>
-        <Button text={'See Project'} link={'https://github.com/CareerSocius/resumebuilder'}/>
-        <li>Technology Volunteer at <a href="https://www.bridgesforenterprise.com/"
-                target="_blank"
-                rel="noreferrer">Bridges for Enterprise</a>'s Global Product Management Team </li>
-      </div>
-      <div className="flex justify-end">
-        <p className="title">Fun things I've done</p>
-        <li>Developer Student's Club Hack for Good 2022, Champions</li>
-      </div>
-      <div></div>
       <Skills />
-      <Playlist />
-      <Interest />
-      <p className="flex justify-center">Made for you by Megan Yee</p>
+      <div className="flex">
+        <img src={fun} alt="fun" />
+        <div className="my-12 text-right w-2/3 pl-2 align-center">
+          <p className="title">What I've been up to</p>
+          <p className="my-4">
+            Coding at{" "}
+            <a
+              href="https://www.linkedin.com/company/trycatchclub/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              try{"{"}catch{"}"}
+            </a>
+            , a <p className="pink">women in tech organization</p> that builds
+            software projects for social good in Singapore. We're currently
+            building a career platform for CareerSocius, it's still a work in
+            progress but you can{" "}
+            <a
+              href="https://github.com/CareerSocius/resumebuilder"
+              target="_blank"
+              rel="noreferrer"
+            >
+              check it out here!
+            </a>{" "}
+          </p>
+          <p className="my-4">
+            Volunteering at{" "}
+            <a
+              href="https://www.bridgesforenterprise.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Bridges for Enterprise
+            </a>
+            's Global Product Management Team. We are a UK-based non-profit
+            providing pro-bono advisory services to social entrepreneurs. I'm
+            currently working on an internal admin portal to be used by members
+            of BfE.
+          </p>
+          <div className="text-right">
+            <p className="title">Fun things I've done</p>
+            <p>Champions, Developer Student's Club Hack for Good 2022</p>
+            <p>Govtech Girls in Tech Summer Mentorship Programme 2020</p>
+            <p>Google Computer Science Summer Institute Institute 2019</p>
+          </div>
+        </div>
+      </div>
+      <div id="about"><About /></div>
+      <p className="mt-24 flex justify-center">Made for you by Megan Yee</p>
     </div>
   );
 };

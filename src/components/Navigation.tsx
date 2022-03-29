@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from 'react-router-hash-link';
 
 import myResume from "../assets/resume.pdf";
 
@@ -8,7 +9,7 @@ const Navigation = () => {
         <p className="name">Megan Yee</p>
       <div className="sub-navbar">
         <p>
-          <a href="/">about</a>
+          <a href="/"><HashLink smooth to="#about">about</HashLink></a>
         </p>
         <p>
           <a href={myResume} target="_blank" rel="noreferrer">
