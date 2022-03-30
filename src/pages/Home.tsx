@@ -28,7 +28,7 @@ const Home = () => {
           <div className="my-4">
             <p>
               I'm interested to synthesize my technical skills and passion for
-              design to build products for good!{" "}
+              design to <p className="pink">build products for good!</p>{" "}
             </p>
           </div>
           <div className="my-4">
