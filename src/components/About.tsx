@@ -18,7 +18,7 @@ const About = () => {
             more).{" "}
           </p>
           <p className="mt-4 w-4/5">
-            I'm currently watching Bridgerton Season 2 and Twenty-Five Twenty-One. I have collated my favourite songs in a spotify playlist below!
+            I'm currently watching Bridgerton Season 2 and Twenty-Five Twenty-One and a bunch of cooking videos on YouTube. I have collated my favourite songs in a spotify playlist below!
           </p>
           <div className="mt-4 flex justify-start">
           <Playlist />
