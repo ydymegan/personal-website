@@ -99,7 +99,7 @@ const Home = () => {
             <p className="title">Fun things I've done</p>
             <p>Champions, Developer Student's Club Hack for Good 2022</p>
             <p>Govtech Girls in Tech Summer Mentorship Programme 2021</p>
-            <p>Google Computer Science Summer Institute Institute 2019</p>
+            <p>Google Computer Science Summer Institute Singapore 2019</p>
           </div>
         </div>
       </div>
