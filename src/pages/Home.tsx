@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 import Navigation from "../components/Navigation";
 import About from "../components/About";
@@ -14,7 +15,7 @@ const Home = () => {
       <div className="header">
         <div className="header-content">
           <p className="title">
-            Hey there, <a href="about">I'm Megan!</a>
+            Hey there, <a href="/"><HashLink smooth to="#about">I'm Megan!</HashLink></a>
           </p>
           <div className="my-4">
             <p>
