@@ -26,7 +26,7 @@ const About = () => {
                 href="https://www.netflix.com/sg/title/81517168"
                 target="_blank"
                 rel="noreferrer"
-              >Twenty-Five Twenty-One</a> and a bunch of cooking videos on YouTube. I have collated my favourite songs in a spotify playlist below!
+              >Twenty-Five Twenty-One</a> and a bunch of cooking videos on YouTube. You can also check out my favourite songs in a spotify playlist below!
           </p>
           <div className="mt-4 flex justify-start">
           <Playlist />
